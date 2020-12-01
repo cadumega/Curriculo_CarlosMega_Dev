@@ -2,20 +2,16 @@ body, h1, h2, p, ul, li, a{
   margin: 0px;
   padding: 0px;
 }
-
 body {
   font-family: 'Nunito',Helvetica, Arial,sans-serif;
   color: #222222;
 }
-
 ul {             
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 img {  /* quero que as imagens sejam responsivas, não estora os containers com max-width */
   display: block;
   max-width: 100%;
@@ -33,11 +29,12 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 .menu {
   max-width: 960px;
   margin: 0 30px;
-  padding: 15px 0;  /* distância do elemento top e bottom */
+  padding: 10px 0;  /* distância do elemento top e bottom */
   display: flex;
   flex-wrap: wrap;       /* quebra */
   justify-content: space-between; /* alinhados na ponta */
   align-items: center;      /* marca sempre no centro */
+  
 }
 
 .menu a { 
@@ -45,7 +42,7 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .menu-logo a {
-  font-size: 1.75em;          /* 36/16=2,25em */
+  font-size: 1.50em;          /* 36/16=2,25em */
   font-weight: bold;
   margin: 0 auto;        /* se diminuir a janela a ul não grudar, como um gutter */
 }
@@ -63,4 +60,92 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 
 .menu-nav a:hover {        /* ao passar o mouse muda a cor */
   color: #faea5f;
+}
+
+@media (max-width:800px) {     /* abaixo de 800 os padding ficam 10px */
+  .preco{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* ◘◘◘◘◘ RESUME ◘◘◘◘◘ */
+.resume {
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 12px;
+  text-align: left;
+  
+}
+
+.resume-nome{
+  background:;
+}
+
+.resume-nome h1 {
+  font-size: 22px;
+  color: #252525;
+}
+.resume-nome h2 {
+  font-size: 18px;
+  color: #f8a25c;
+  line-height: 1.4;
+}
+
+.resume-nome h3 {
+  font-size: 14px;
+  color: #a4a4a4;
+  font-weight: none;
+}
+.resume-nome a {
+  display: inline-flex;
+	border: 3px solid #2c70ff;
+	padding: 10px 30px;
+	color: #2c70ff ;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+  letter-spacing: .1em;
+  padding: 10px;
+}
+
+.resume-nome a:hover {
+	color: #f8a25c;
+	border-color:#f8a25c;
+}
+
+.sobre p {
+  font-size: 1.00em;      /* texto estilização */
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  margin: 10px 10px 10px 10px;
+}
+
+.tecnologia {
+  max-width: 960px;     /* posicionamento da div */
+  margin: 60px auto;  /* ajustar a margem do site */
+  display: flex;
+  flex-wrap: wrap;    /* quebrar responsivo */
+}
+
+.tecnologia-item {
+  flex: 1 1 300px; /* 1/3 do layout; 1 grow 1 shrink 300px basis */
+  margin: 20px 10px;
+  /* height: 300px;    /* forçar altura,mas não é ideal */ */
+}
+
+.tecnologia-item h2 {
+  font-size: 2.25em;      /* texto estilização */
+  color: #a4a4a4;
+  margin-bottom: 20px;
+}
+
+.tecnologia-item h2::before {    /* tracinho do subtítulo q vem antes pseudoelement */
+  content: '';             /* se escrever algo irá aparecer,deixar vazio */   
+  display: inline-block;       /* mostrar na linha */
+  width:8px;
+  height: 30px;
+  margin-right: 10px;         /* espaçar right */
+  background: blue;
 }
