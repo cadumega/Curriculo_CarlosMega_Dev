@@ -120,8 +120,8 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   height: 250px;
 }
 
-.sobre-button a {
-  background-color: #f8a25c; /* Green */
+.btn a {
+  background-color: #f8a25c; 
   border: none;
   color: white;
   padding: 16px 32px;
@@ -130,10 +130,11 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   display: inline-block;
   font-size: 30px;
   margin: 40px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
+
 
 
 /*  ◘◘◘◘◘◘◘◘◘◘◘◘ Tecnologia ◘◘◘◘◘◘◘◘◘◘◘◘ */
@@ -176,11 +177,9 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   justify-content: space-between;
 }
 
-.portfolio-txt{
-  float: right;
-}
 
-.portfolio-button{
+
+.portfolio-btn{
 
 }
 
