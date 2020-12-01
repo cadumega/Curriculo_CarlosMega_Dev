@@ -1,0 +1,66 @@
+body, h1, h2, p, ul, li, a{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Nunito',Helvetica, Arial,sans-serif;
+  color: #222222;
+}
+
+ul {             
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {  /* quero que as imagens sejam responsivas, não estora os containers com max-width */
+  display: block;
+  max-width: 100%;
+}
+
+* {     /* estilo geral que mostra todas as tags, a área de conteúdo dos elementos */
+  box-sizing: border-box;
+}
+
+/*  ◘◘◘ MENU ◘◘◘ */
+.menu-bg {
+  background: #2c70ff;
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 30px;
+  padding: 15px 0;  /* distância do elemento top e bottom */
+  display: flex;
+  flex-wrap: wrap;       /* quebra */
+  justify-content: space-between; /* alinhados na ponta */
+  align-items: center;      /* marca sempre no centro */
+}
+
+.menu a { 
+  color: white;
+}
+
+.menu-logo a {
+  font-size: 1.75em;          /* 36/16=2,25em */
+  font-weight: bold;
+  margin: 0 auto;        /* se diminuir a janela a ul não grudar, como um gutter */
+}
+
+.menu-nav ul {
+  display: flex;        /* posso ter flex dentro de flex */
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;  /* aumentar a área de contato */
+}
+
+.menu-nav a:hover {        /* ao passar o mouse muda a cor */
+  color: #faea5f;
+}
