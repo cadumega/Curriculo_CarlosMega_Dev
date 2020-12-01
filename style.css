@@ -21,85 +21,89 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   box-sizing: border-box;
 }
 
-/*  ◘◘◘ MENU ◘◘◘ */
+/*  ◘◘◘◘◘◘◘◘◘◘◘◘ MENU ◘◘◘◘◘◘◘◘◘◘◘◘ */
 .menu-bg {
   background: #2c70ff;
 }
 
 .menu {
-  max-width: 1400px;
-  margin: 0 10px;
-  padding: 10px 10px 10px 10px;  /* distância do elemento top e bottom */
+  max-width: 960px;   /* tela desktop */
+  margin: 0 auto;
+  padding: 15px 0;  /* distância do elemento top e bottom */
   display: flex;
   flex-wrap: wrap;       /* quebra */
   justify-content: space-between; /* alinhados na ponta */
-  align-items: center;      /* marca sempre no centro */
-  
+  align-items: center;      /* marca sempre no centro */ 
 }
 
-.menu a { 
-  color: white;
+.menu a {
+  color:white
 }
 
 .menu-logo a {
-  font-size: 2.00em;          /* 36/16=2,25em */
+  font-size: 2.25em;
   font-weight: bold;
-  margin: 0 auto;        /* se diminuir a janela a ul não grudar, como um gutter */
+  margin: 0 10px;  /* não grudar no container e nem qd diminuir a tela */
 }
 
-.menu-nav ul {
-  display: flex;        /* posso ter flex dentro de flex */
+.menu-nav ul {         /* aqui que fica na horizontal os items, na ul!!*/
+  display: flex;
   flex-wrap: wrap;
 }
 
 .menu-nav a {
-  font-size: 1.35em;
-  display: inline-flex;
-  padding: 10px;  /* aumentar a área de contato */
-  justify-content: space-between;
+  font-size: 1.10em;
+  display: block;
+  padding: 15px;
 }
 
-.menu-nav a:hover {        /* ao passar o mouse muda a cor */
+.menu-nav a:hover{
   color: #f8a25c;
 }
 
-@media (max-width:800px) {     /* abaixo de 800 os padding ficam 10px */
-  .preco{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Introdução ◘◘◘◘◘◘◘◘◘◘◘◘ */
+.introducao1{
+    font-size: 2em;
+    line-height: 1; /* grudar mais a letra */
+    max-width: 960px;  /* alinhar com menu */
+    margin: 0 auto; /* alinhar com menu */
+    padding: 50px 0px 0px;
 }
 
-/* ◘◘◘◘◘ RESUME ◘◘◘◘◘ */
-.resume {
+.introducao2{
+  font-size: 1.5em;
+  color: #f8a25c;
+  line-height: 1; /* grudar mais a letra */
+  max-width: 960px;  /* alinhar com menu */
+  margin: 0 auto; /* alinhar com menu */
+}
+
+/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Sobre ◘◘◘◘◘◘◘◘◘◘◘◘ */
+.sobre {
+  display: flex;
+  max-width: 960px;
+  flex: 2;
   margin: 0 auto;
-  padding: 30px;
-  font-size: 12px;
-  text-align: left;
-  
+  padding: 60px 0;
 }
 
-.resume-nome{
-  background:;
+.sobre h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #7c7c7c;
+  padding: 10px 5px 5px 10px;
+  align-self: center;
 }
 
-.resume-nome h1 {
-  font-size: 42px;
-  color: #252525;
-}
-.resume-nome h2 {
-  font-size: 34px;
-  color: #f8a25c;
-  line-height: 1.4;
+.sobre-img {
+  height: 250px;
 }
 
-.resume-nome h3 {
-  font-size: 28px;
-  color: #a4a4a4;
-  font-weight: none;
-}
-.resume-nome a {
-  display: inline-flex;
+.sobre-button a {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flexbox;
+  flex-wrap: wrap;
 	border: 3px solid #2c70ff;
 	padding: 10px 30px;
 	color: #2c70ff ;
@@ -108,43 +112,22 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 	text-transform: uppercase;
 	font-weight: bold;
   letter-spacing: .1em;
-  padding: 20px;       /* ! */
+  padding: 20px 20px 20px 20px;       /* ! */
+  margin: 10px;
+  align-items: center;
 }
 
-.resume-nome a:hover {
-	color: #f8a25c;
-	border-color:#f8a25c;
-}
 
-/* ◘◘◘◘◘ SOBRE ◘◘◘◘◘ */
+/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Tecnologia ◘◘◘◘◘◘◘◘◘◘◘◘ */
 
-.sobre p {
-  font-size: 1.00em;      /* texto estilização */
-  color: #a4a4a4;
-  margin-bottom: 20px;
-  margin: 10px 10px 10px 10px;
-}
-
-/* ◘◘◘◘◘ TECNOLOGIA ◘◘◘◘◘ */
-
-.tecnologia {
-  max-width: 300px;     /* posicionamento da div */
-  margin: 50px;  /* ajustar a margem do site */
-  display: flex;
-  flex-wrap: wrap;    /* quebrar responsivo */
-  ;
-}
-
-.tecnologia-item {
-  flex: 1; /* 1/3 do layout; 1 grow 1 shrink 300px basis */
-  margin: 20px 10px;
-  /* height: 300px;    /* forçar altura,mas não é ideal */ */
-}
-
-.tecnologia-item h2 {
-  font-size: 2.25em;      /* texto estilização */
-  color: #a4a4a4;
-  margin-bottom: 20px;
+.tecnologia {           /* linha de delimitação */
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  max-width: 960px;
+  margin: 0 auto;    /* centralizar!! */
+  padding: 40px 0;     /* espaçar separação */
+  display: flex;     /* são os filhos da div */
+  flex-wrap: wrap; /* quebrar as imagens */
 }
 
 .tecnologia-item ::before {    /* tracinho do subtítulo q vem antes pseudoelement */
@@ -153,21 +136,41 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   width:8px;
   height: 30px;
   margin-right: 10px;         /* espaçar right */
-  background: blue;
 }
-
 .tecnologia-item:nth-of-type(1) h2::before{   /* classe nth-of-type é pseudoseletor */
   background: #ae81ff                        /*  nth-of-type(3) só iria falar com o 3°*/
 }
-.tecnologia-item:nth-of-type(2) h2::before{
-  background: #f9265e
-}
-.tecnologia-item:nth-of-type(3n+3) h2::before{
-  background: #66d9eb
+
+/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Portfólio ◘◘◘◘◘◘◘◘◘◘◘◘ */
+.portfolio{
+  max-width: 960px;   /* tela desktop */
+  margin: 0 auto;
 }
 
-.tecnologia-item p {
-  font-size: 1.125em;
-  line-height: 1.4;
-  color: #7c7c7c ;
+
+
+
+
+/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Contato ◘◘◘◘◘◘◘◘◘◘◘◘ */
+.contato{
+  max-width: 960px;   /* tela desktop */
+  margin: 0 auto;
+}
+
+
+
+
+/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Footer ◘◘◘◘◘◘◘◘◘◘◘◘ */
+.footer {
+  display: flex;
+  background: #2c70ff;
+  height: 150px;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 2.00em;
+  color: #ffffff;
 }
