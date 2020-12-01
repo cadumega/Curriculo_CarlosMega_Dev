@@ -27,9 +27,9 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .menu {
-  max-width: 960px;
-  margin: 0 30px;
-  padding: 10px 0;  /* distância do elemento top e bottom */
+  max-width: 1400px;
+  margin: 0 10px;
+  padding: 10px 10px 10px 10px;  /* distância do elemento top e bottom */
   display: flex;
   flex-wrap: wrap;       /* quebra */
   justify-content: space-between; /* alinhados na ponta */
@@ -42,7 +42,7 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .menu-logo a {
-  font-size: 1.50em;          /* 36/16=2,25em */
+  font-size: 2.00em;          /* 36/16=2,25em */
   font-weight: bold;
   margin: 0 auto;        /* se diminuir a janela a ul não grudar, como um gutter */
 }
@@ -53,19 +53,20 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .menu-nav a {
-  font-size: 1.25em;
-  display: block;
+  font-size: 1.35em;
+  display: inline-flex;
   padding: 10px;  /* aumentar a área de contato */
+  justify-content: space-between;
 }
 
 .menu-nav a:hover {        /* ao passar o mouse muda a cor */
-  color: #faea5f;
+  color: #f8a25c;
 }
 
 @media (max-width:800px) {     /* abaixo de 800 os padding ficam 10px */
   .preco{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -83,17 +84,17 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .resume-nome h1 {
-  font-size: 22px;
+  font-size: 42px;
   color: #252525;
 }
 .resume-nome h2 {
-  font-size: 18px;
+  font-size: 34px;
   color: #f8a25c;
   line-height: 1.4;
 }
 
 .resume-nome h3 {
-  font-size: 14px;
+  font-size: 28px;
   color: #a4a4a4;
   font-weight: none;
 }
@@ -102,18 +103,20 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 	border: 3px solid #2c70ff;
 	padding: 10px 30px;
 	color: #2c70ff ;
-	font-size: 14px;
+	font-size: 22px;
 	line-height: 20px;
 	text-transform: uppercase;
 	font-weight: bold;
   letter-spacing: .1em;
-  padding: 10px;
+  padding: 20px;       /* ! */
 }
 
 .resume-nome a:hover {
 	color: #f8a25c;
 	border-color:#f8a25c;
 }
+
+/* ◘◘◘◘◘ SOBRE ◘◘◘◘◘ */
 
 .sobre p {
   font-size: 1.00em;      /* texto estilização */
@@ -122,15 +125,18 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   margin: 10px 10px 10px 10px;
 }
 
+/* ◘◘◘◘◘ TECNOLOGIA ◘◘◘◘◘ */
+
 .tecnologia {
-  max-width: 960px;     /* posicionamento da div */
-  margin: 60px auto;  /* ajustar a margem do site */
+  max-width: 300px;     /* posicionamento da div */
+  margin: 50px;  /* ajustar a margem do site */
   display: flex;
   flex-wrap: wrap;    /* quebrar responsivo */
+  ;
 }
 
 .tecnologia-item {
-  flex: 1 1 300px; /* 1/3 do layout; 1 grow 1 shrink 300px basis */
+  flex: 1; /* 1/3 do layout; 1 grow 1 shrink 300px basis */
   margin: 20px 10px;
   /* height: 300px;    /* forçar altura,mas não é ideal */ */
 }
@@ -141,11 +147,27 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   margin-bottom: 20px;
 }
 
-.tecnologia-item h2::before {    /* tracinho do subtítulo q vem antes pseudoelement */
+.tecnologia-item ::before {    /* tracinho do subtítulo q vem antes pseudoelement */
   content: '';             /* se escrever algo irá aparecer,deixar vazio */   
   display: inline-block;       /* mostrar na linha */
   width:8px;
   height: 30px;
   margin-right: 10px;         /* espaçar right */
   background: blue;
+}
+
+.tecnologia-item:nth-of-type(1) h2::before{   /* classe nth-of-type é pseudoseletor */
+  background: #ae81ff                        /*  nth-of-type(3) só iria falar com o 3°*/
+}
+.tecnologia-item:nth-of-type(2) h2::before{
+  background: #f9265e
+}
+.tecnologia-item:nth-of-type(3n+3) h2::before{
+  background: #66d9eb
+}
+
+.tecnologia-item p {
+  font-size: 1.125em;
+  line-height: 1.4;
+  color: #7c7c7c ;
 }
