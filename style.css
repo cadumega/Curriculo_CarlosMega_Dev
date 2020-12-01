@@ -40,6 +40,13 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   color:white
 }
 
+.logo {
+  max-width:100px;
+  max-height:100px;
+  width: auto;
+  height: auto;
+
+}
 .menu-logo a {
   font-size: 2.25em;
   font-weight: bold;
@@ -62,20 +69,34 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 /*  ◘◘◘◘◘◘◘◘◘◘◘◘ Introdução ◘◘◘◘◘◘◘◘◘◘◘◘ */
+
+.introducao{
+  
+}
+
 .introducao1{
     font-size: 2em;
     line-height: 1; /* grudar mais a letra */
     max-width: 960px;  /* alinhar com menu */
     margin: 0 auto; /* alinhar com menu */
-    padding: 50px 0px 0px;
+    padding: 70px 0px 0px;
 }
 
 .introducao2{
   font-size: 1.5em;
   color: #f8a25c;
-  line-height: 1; /* grudar mais a letra */
-  max-width: 960px;  /* alinhar com menu */
-  margin: 0 auto; /* alinhar com menu */
+  line-height: 1; 
+  max-width: 960px;  
+  margin: 0 auto; 
+  margin-top: 10px;
+}
+
+.introducao3{
+  font-size: 1.5em;
+  color: #7c7c7c;
+  max-width: 960px;  
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 /*  ◘◘◘◘◘◘◘◘◘◘◘◘ Sobre ◘◘◘◘◘◘◘◘◘◘◘◘ */
@@ -100,21 +121,18 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .sobre-button a {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flexbox;
-  flex-wrap: wrap;
-	border: 3px solid #2c70ff;
-	padding: 10px 30px;
-	color: #2c70ff ;
-	font-size: 22px;
-	line-height: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
-  letter-spacing: .1em;
-  padding: 20px 20px 20px 20px;       /* ! */
-  margin: 10px;
-  align-items: center;
+  background-color: #f8a25c; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 40px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 
@@ -145,11 +163,26 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 .portfolio{
   max-width: 960px;   /* tela desktop */
   margin: 0 auto;
+  display:flex; 
+  flex-direction:column;
 }
 
+.container img {
+  max-width:400px;
+  max-height:350px;
+  width: auto;
+  height: auto;
+  display:flex;
+  justify-content: space-between;
+}
 
+.portfolio-txt{
+  float: right;
+}
 
+.portfolio-button{
 
+}
 
 /*  ◘◘◘◘◘◘◘◘◘◘◘◘ Contato ◘◘◘◘◘◘◘◘◘◘◘◘ */
 .contato{
