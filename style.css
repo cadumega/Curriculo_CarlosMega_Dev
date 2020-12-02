@@ -215,7 +215,7 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   line-height: 1.4;
   color: #7c7c7c ;
 }
-/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Portfólio ◘◘◘◘◘◘◘◘◘◘◘◘ */
+/* ◘◘◘◘◘◘◘◘◘◘◘◘ Portfólio ◘◘◘◘◘◘◘◘◘◘◘◘ */
 
 .portintro{
   font-size: 1.0em;
@@ -236,10 +236,9 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .portfolio{
-  max-width: 1000px;   /* tela desktop */
+  max-width: 960px;   /* tela desktop */
   margin: 0 auto;
-  display:flex; 
-  flex-direction:column;
+  
 }
 
 .portfolio-btn{
@@ -258,16 +257,15 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 }
 
 .container img {
-  max-width:400px;
+  max-width:300px;
   max-height:350px;
   width: auto;
   height: auto;
-  display:flex;
-  justify-content: space-between;
-  float: right;
 }
 
 .text {
+  display: inline-block;
+  flex-wrap: wrap;
   font-size: 1.4em;
   color: #7c7c7c;
   max-width: 960px;  
@@ -285,7 +283,7 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   padding: 0 auto;
   text-align: center;
   align-items: center;
-  background: #f9265e;
+  margin-top: 20px;
 }
 
 .contintro:after{  /* tracinho sub */
@@ -296,14 +294,39 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   background: #222222;
   margin:8px auto ;
 }
+.container-img{
+  max-width: 960px;
+  align-items: center;
+  text-align: center;
+}
 
-.contato {
-  max-width: 960px;   /* tela desktop */
-  margin: 0 auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  display:flex; 
-  padding: 20px;
+
+
+/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Footer ◘◘◘◘◘◘◘◘◘◘◘◘ */
+.footer {
+  display: flex;
+  background: #2c70ff;
+  height: 150px;
+  align-items: center;
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+  font-size: 2.00em;
+  color: #ffffff;
+}
+
+
+
+/* Limbo: */
+.line {
+  border-top: 2px solid #2c70ff;
+  max-width: 960px;
+  margin: 0 auto;    /* centralizar!! */
+  padding: 30px 0;     /* espaçar separação */
+  display: block;     /* são os filhos da div */
+  flex-wrap: wrap; /* quebrar as imagens */
 }
 
 .clogo {
@@ -329,39 +352,4 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   display: block;     /* são os filhos da div */
   flex-wrap: wrap; /* quebrar as imagens */
   
-}
-
-.container-img:after{  /* tracinho sub */
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #222222;
-  margin:8px auto ;
-}
-
-/*  ◘◘◘◘◘◘◘◘◘◘◘◘ Footer ◘◘◘◘◘◘◘◘◘◘◘◘ */
-.footer {
-  display: flex;
-  background: #2c70ff;
-  height: 150px;
-  align-items: center;
-}
-
-.footer p {
-  flex: 1;
-  text-align: center;
-  font-size: 2.00em;
-  color: #ffffff;
-}
-
-
-/* Limbo: */
-.line {
-  border-top: 2px solid #2c70ff;
-  max-width: 960px;
-  margin: 0 auto;    /* centralizar!! */
-  padding: 30px 0;     /* espaçar separação */
-  display: block;     /* são os filhos da div */
-  flex-wrap: wrap; /* quebrar as imagens */
 }
