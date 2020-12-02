@@ -55,8 +55,8 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
   max-height:100px;
   width: auto;
   height: auto;
-
 }
+
 .menu-logo a {
   font-size: 2.25em;
   font-weight: bold;
@@ -128,6 +128,13 @@ img {  /* quero que as imagens sejam responsivas, não estora os containers com 
 
 .btn :hover{
   background-color:#f9265e;
+}
+
+.cadu {
+  max-width:200px;
+  max-height:200px;
+  width: auto;
+  height: auto;
 }
  
 /*  ◘◘◘◘◘◘◘◘◘◘◘◘ Sobre ◘◘◘◘◘◘◘◘◘◘◘◘ */
