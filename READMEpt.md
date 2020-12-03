@@ -1,6 +1,6 @@
-# Curriculo_CarlosMega_Dev
+:ledger:**Criação do meu currículo na web. Construção 50%**. 
 
-:ledger: **Criação do meu currículo na web. Construção 50%**. https://cadumega.github.io/Curriculo_CarlosMega_Dev/
+https://cadumega.github.io/Curriculo_CarlosMega_Dev/
 ---
 
 1. Layout correto das IMAGENS do portfólio e introdução.
