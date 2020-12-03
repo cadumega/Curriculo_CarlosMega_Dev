@@ -1,4 +1,5 @@
-:ledger:**Criação do meu currículo na web. Construção 50%**. 
+# :ledger:Projeto Website_Currículo 
+:gear:**Construção 50%**. 
 
 https://cadumega.github.io/Curriculo_CarlosMega_Dev/
 ---
